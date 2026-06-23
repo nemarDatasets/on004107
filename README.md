@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004107-blue)](https://doi.org/10.82901/nemar.on004107)
+
 This data was part of the study of:
 
 M.P. Weisend, F.M. Hanlon, R. Montaño, S.P. Ahlfors, A.C. Leuthold, D. Pantazis, J.C. Mosher, A.P. Georgopoulos, M.S. Hämäläinen, C.J. Aine,, V. (2007). Paving the way for cross-site pooling of magnetoencephalography (MEG) data. International Congress Series, Volume 1300, Pages 615-618,.
