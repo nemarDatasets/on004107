@@ -1,7 +1,8 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "MIND DATA",
+  "description": "This magnetoencephalography (MEG) dataset comprises neuroimaging data collected to establish standardized protocols for cross-site pooling of MEG data. The dataset demonstrates the application of BIDS formatting to MEG neuroimaging studies and serves as a reference resource for harmonizing MEG data acquisition and analysis across multiple research institutions.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,12 +17,29 @@
     "M.S. Hamalainen": {},
     "C.J. Aine": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004107.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "neuroimaging"
+    },
+    {
+      "term": "brain imaging"
+    },
+    {
+      "term": "data standardization"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1016/j.ics.2006.12.095",
       "identifier_type": "DOI",
@@ -46,6 +64,11 @@
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004107.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -56,9 +79,8 @@
       "funder_name": "LLC"
     },
     {
-      "funder_name": "U.S. DOE",
-      "award_number": "DE-FG02-99ER62764",
-      "award_title": "The MIND Institute"
+      "funder_name": "U.S. Department of Energy",
+      "award_number": "DE-FG02-99ER62764"
     },
     {
       "funder_name": "NIH",
@@ -70,66 +92,27 @@
       "award_title": "Center for Functional Neuromaging Technologies"
     },
     {
-      "funder_name": "U.S. DOE",
-      "award_number": "DE-AC52-06NA25396",
-      "award_title": "Los Alamos National Security, LLC for the NNSA"
+      "funder_name": "U.S. Department of Energy",
+      "award_number": "DE-AC52-06NA25396"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "MEG Dataset",
   "modalities": [
     "meg",
     "anat"
   ],
-  "resource_type_specific": "MEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "82.9 GB (98 files)"
   ],
   "formats": [
     ".fif",
     ".gz",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "The MIND DATA dataset comprises magnetoencephalography (MEG) recordings from the Weisend et al. (2007) study on cross-site pooling and standardization of MEG data. This dataset demonstrates the application of the MEG-BIDS format for organizing and sharing electrophysiological neuroimaging data, facilitating collaborative analysis and data harmonization across research institutions.",
-  "keywords": [
-    {
-      "term": "Magnetoencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "neuroimaging"
-    },
-    {
-      "term": "brain imaging"
-    },
-    {
-      "term": "Electrophysiology",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004594"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "data standardization"
-    },
-    {
-      "term": "MEG-BIDS"
-    },
-    {
-      "term": "cross-site"
-    },
-    {
-      "term": "multi-site"
-    },
-    {
-      "term": "data harmonization"
-    }
-  ],
-  "source_hash": "f0563afe36a9507f55bf2bc341ea179b791b1ee16a75e81373f53bcf892bf904"
+  "methods_description": "Data were acquired using magnetoencephalography (MEG) and converted to BIDS format using MNE-BIDS following the MEG-BIDS specification.",
+  "source_hash": "b00f7ae122e44dcfe76b9123286d7afc9e27bbe18b91bd55c545d7317ec66f4f"
 }
