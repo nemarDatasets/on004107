@@ -2,7 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "MIND DATA",
-  "description": "This magnetoencephalography (MEG) dataset comprises neuroimaging data collected to establish standardized protocols for cross-site pooling of MEG data. The dataset demonstrates the application of BIDS formatting to MEG neuroimaging studies and serves as a reference resource for harmonizing MEG data acquisition and analysis across multiple research institutions.",
+  "description": "MEG dataset collected across multiple sites as part of a study on enabling cross-site pooling of magnetoencephalography data. The recordings were converted to BIDS using MNE-BIDS and follow the MEG-BIDS specification.",
+  "methods_description": "Data were acquired using magnetoencephalography (MEG) and converted to BIDS format using MNE-BIDS following the MEG-BIDS specification.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,31 +20,23 @@
   },
   "keywords": [
     {
-      "term": "Magnetoencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
       "term": "MEG"
     },
     {
-      "term": "BIDS"
+      "term": "Magnetoencephalography"
     },
     {
-      "term": "neuroimaging"
+      "term": "cross-site data pooling"
     },
     {
-      "term": "brain imaging"
-    },
-    {
-      "term": "data standardization"
+      "term": "multi-site study"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1016/j.ics.2006.12.095",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004107",
@@ -51,24 +44,24 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004107",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds004107.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004107",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -83,16 +76,16 @@
       "award_number": "DE-FG02-99ER62764"
     },
     {
-      "funder_name": "NIH",
+      "funder_name": "NIBIB",
       "award_number": "R01-EB002010"
     },
     {
       "funder_name": "NIH",
       "award_number": "P41-RR14075",
-      "award_title": "Center for Functional Neuromaging Technologies"
+      "award_title": "Center for Functional Neuroimaging Technologies"
     },
     {
-      "funder_name": "U.S. Department of Energy",
+      "funder_name": "NNSA, U.S. Department of Energy",
       "award_number": "DE-AC52-06NA25396"
     }
   ],
@@ -103,7 +96,7 @@
     "anat"
   ],
   "sizes": [
-    "82.9 GB (98 files)"
+    "77.20 GB (98 files)"
   ],
   "formats": [
     ".fif",
@@ -113,6 +106,5 @@
     ".tsv",
     ".yml"
   ],
-  "methods_description": "Data were acquired using magnetoencephalography (MEG) and converted to BIDS format using MNE-BIDS following the MEG-BIDS specification.",
   "source_hash": "b00f7ae122e44dcfe76b9123286d7afc9e27bbe18b91bd55c545d7317ec66f4f"
 }
